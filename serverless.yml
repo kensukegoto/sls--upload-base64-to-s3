@@ -122,6 +122,7 @@ resources:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: s3-base64-kg.input
+      DeletionPolicy: Retain
     output:
       Type: AWS::S3::Bucket
       Properties:

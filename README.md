@@ -22,5 +22,16 @@ event.bodyで値を受け取れるが`body: 'name=ibaraki&img=ibaraki.jpg'`と�
 
 ### カスタムリソースとはなんぞ？
 
+# 画像をあげるには？
 
+- base64で送る
+  - [AWS API Gateway + Lambda + S3 でバイナリデータを保存する](https://qiita.com/acron/items/4c035bef8295a7035ea1)
+- API Gatewayにjpegなどが送られたらbase64に変換されるようにAPI Gatewayの設定をする
+  - pluginが必要になる
+
+[【AWS勉強メモ】Serverless Frameworkでバイナリデータを処理するアーキテクチャを構築](https://qiita.com/akatsukaha/items/0a1e01ac62513c07e003)
+
+# 確認したい
+
+- application/x-www-form-urlencodedでpostした場合に、各データをkey,valueで取得出来るように出来ないか？
 
